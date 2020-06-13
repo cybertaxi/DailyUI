@@ -1,0 +1,77 @@
+<html>
+    
+<head>
+  <title>Express HTML</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="/scripts/index.js"></script>
+
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> -->
+  <link rel= "stylesheet" href="/styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class = "form">
+        <ul class="tab-group">
+          <li class="tab active"> <a href="#signup">Sign Up</a> </li>
+          <li class="tab"><a href="#login">Log In</a> </li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="signup">
+              <h1>Sign Up For Free!</h1>
+              <form action="/" method="post">
+                <div class="top-row">
+                    <div class="field-wrap">
+                        <input type="text" placeholder = " First Name*"required autocomplete="on" />
+                    </div>
+                    <div class="field-wrap">
+                        <input type="text" placeholder = " Last Name*"required autocomplete="off" />
+                    </div>
+                </div><!---TOP ROW-->
+                    <div class="field-wrap">
+                        <input type="text" placeholder = " Username*"required autocomplete="off" />
+                    </div>
+                    <div class="field-wrap">
+                        <input type="text" placeholder = " Email Address*"required autocomplete="off" />
+                    </div>
+                    <div class="field-wrap">
+                        <input type="text" placeholder = " Set Password*"required autocomplete="on" />
+                    </div>
+                    <button type="submit" class="button button-block"/>SIGN UP</button>
+              </form>
+          </div><!--signup-->
+          <div id="login">
+              <h1>Welcome Back!</h1>
+              <form action="/" method="post">
+                  <div class="field-wrap">
+                    <input type="email" placeholder = " Username*" required autocomplete="off"/>
+                  </div>
+                
+                  <div class="field-wrap">
+                    <input type="password" placeholder=" Password*" required autocomplete="off"/>
+                  </div>
+                
+                  <p class="forgot"><a href="#">Forgot Password?</a></p>
+                
+                  <button class="button button-block"/>LOG IN</button>
+              </form>
+          </div><!--login-->
+        </div> <!--tab-content-->
+    </div> <!--form-->
+  </div><!---container-->
+</body>
+</html>

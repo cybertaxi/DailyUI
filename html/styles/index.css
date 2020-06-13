@@ -1,0 +1,121 @@
+body, html{
+    height:100%;
+    font-family: 'Istok Web', sans-serif;
+}
+.container{
+    /* background image Christin Hume on Unsplash */
+    background-image: url("/images/typing.jpg");
+    width:100%;   
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    padding-bottom:20px;
+}
+.form{
+    background:rgba(255, 255, 255, 0.575);
+    margin:5% auto;
+    width: 600px;
+    border-radius:2px;
+    box-shadow:0 4px 10px 1px rgba(100, 100, 100, 0.644);
+    display: flex;
+    flex-direction:column;
+}
+.tab-content{
+    text-align: center;
+}
+ul.tab-group {
+    list-style:none;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top:40px;
+    padding-left:0px;
+}
+li a{
+    width: 260px;
+    height: 50px;
+    color:#ffffff;
+    background: rgb(112, 101, 129);
+    float:left;
+    padding-top:10px;
+    text-align: center;
+    text-decoration: none;
+    font-size:2rem;
+}
+.active a {
+    color:#ffffff;
+    text-decoration: none;
+    background-color: #2a1b3d;
+}
+.tab-group a:hover{
+    color:#ffffff;
+    background-color: #4f3a6b;
+    text-decoration: none;
+    transition:all.5s ease;
+}
+button{
+    background-color: #2a1b3d;
+    font-size:3rem;
+    font-weight: 900;
+    color:#ffffff;
+    width: 520px;
+    height:70px;
+    border:none;
+    letter-spacing: .2em;
+    transition:all.5s ease;
+    -webkit-appearance: none;
+}
+button:hover{
+    color:#ffffff;
+    background-color:rgb(84,74,100);
+}
+.tab-content{
+    padding: 30px;
+    display:flex;
+    flex-direction: column;
+    margin: 0px auto;
+}
+.field-wrap {
+    margin-bottom:40px;
+}
+.top-row .field-wrap{
+    float:left;
+    position:relative;
+    background:black;
+}
+.top-row .field-wrap input{
+    width: 250px;
+}
+.top-row > div:last-child{
+    float: right;
+}
+input{
+    width:520px;
+    height:40px;
+    font-size: 2rem;
+}
+input::placeholder{
+    top:50%;
+    font-size: 1.5rem;
+}
+/* Select the last div child of tab-content */
+/* When on load, it will not show the last div */
+.tab-content > div:last-child {
+    display:none;
+}  
+.forgot a{
+    margin-top:-30px;
+    margin-bottom:20px;
+    float:right;
+}
+.forgot a:hover{
+    text-decoration: none;
+    transition:all.5s ease;
+    -webkit-appearance: none;
+}
